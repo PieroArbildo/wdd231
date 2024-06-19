@@ -78,8 +78,7 @@ const courses = [
     }
 ]
 
-
-/****************Display Courses*******************/
+/*Display Courses*/
 const card = document.getElementById("courses");
 function GetCourses() {
     let sumCredit= 0;
@@ -96,10 +95,8 @@ function GetCourses() {
   totalCredits.innerHTML =`Total Credits: ${sumCredit}`;
 }
 
-
 /*Sum credits */
 const totalCredits = document.getElementById("credits");
-
 
 /* Filter CSE */
 
@@ -117,12 +114,9 @@ function GetCSE() {
       });
       card.innerHTML = content;
       totalCredits.innerHTML =`Total Credits: ${sumCredit}`;
-
   }
-//GetCSE();
 
 /*Filter WDD*/
-
 function GetWDD() {
     let content = "";
     let sumCredit= 0;
@@ -155,12 +149,9 @@ CSE.addEventListener("click", function () {
     GetCSE();
 });
 
-
 const WDD = document.getElementById("wdd");
 WDD.addEventListener("click", function () {
     card.innerHTML =" ";
     let sumCredit=0;
     GetWDD();
 });
-
-
