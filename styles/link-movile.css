@@ -166,6 +166,7 @@ footer {
   text-align: center;
   align-content: center;
   margin-top: 20px;
+  padding-top: 0;
 }
 #flag {
   width: 50px;
@@ -178,4 +179,9 @@ footer {
 
 #lastmodification {
   font-size: 18px;
+}
+
+
+#total-credits p{
+  background-color: rgb(236, 240, 178);
 }

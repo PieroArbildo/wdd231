@@ -20,6 +20,7 @@
 
     <link href="styles/link-movile.css" rel="stylesheet" />
     <script src="scripts/link.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
   </head>
   <body>
     <header>
@@ -65,21 +66,23 @@
         <img src="images/lima-peru.webp" alt="lima peru" />
       </section>
 
-      <section id="section3">
+      <section class="certificate" id="section3">
         <h2 id="last-h2">Web and Computer Programming Certificate</h2>
         <div id="buttons">
-          <button>All</button>
-          <button>CSE</button>
-          <button>WDD</button>
+          <button id="all">All</button>
+          <button id="cse">CSE</button>
+          <button id="wdd">WDD</button>
         </div>
-        <div>
+        <div id="courses">
+          <!--
           <p class="p-all" id="cse">CSE 110</p>
           <p class="p-all" id="wdd">WDD 130</p>
           <p class="p-all" id="cse">CSE 111</p>
           <p class="p-all" id="cse">CSE 210</p>
           <p class="p-all" id="wdd">WDD 131</p>
-          <p class="p-all" id="wdd">WDD 231</p>
+          <p class="p-all" id="wdd">WDD 231</p>-->
         </div>
+        <div id="total-credits"><p id="credits"></p></div>
       </section>
     </main>
     <footer>
@@ -87,7 +90,7 @@
         <span id="currentyear"></span> 🏆 Piero Arbildo 🏆 Peru<img
           id="flag"
           src="images/bandera-peru.jpg"
-          alt=""
+          alt="Peru flag"
         />
       </p>
       <span id="lastmodification"></span>
