@@ -1,0 +1,60 @@
+{
+  "members": [
+  {
+    "name": "KAIROS",
+    "address": "Jr.Vista Alegre 173, SMP",
+    "phone": "534-7424",
+    "website": "https://www.facebook.com/profile.php?id=100063533499695",
+    "image": "images/kairos.png",
+    "membership_level": 3
+  },
+  {
+    "name": "Eternity Sud",
+    "address": "Av.Manuel Quimper 836, SMP",
+    "phone": "248-7742",
+    "website": "https://www.instagram.com/eternity_sud/",
+    "image": "images/eternity.jpg",
+    "membership_level": 1
+  },
+  {
+    "name": "Tambo",
+    "address": "Av.Habish 457, SMP",
+    "phone": "553-6788",
+    "website": "https://www.tambo.pe/",
+    "image": "images/tambo.jpg",
+    "membership_level": 2
+  },
+  {
+    "name": "Maxiahorro",
+    "address": "Av.Martin Olaya 105, SMP",
+    "phone": "421-5362",
+    "website": "https://maxiahorro.com.pe/",
+    "image": "images/maxiahorro.jpg",
+    "membership_level": 2
+  },
+  {
+    "name": "Rockys",
+    "address": "Av.Habish 1040, SMP",
+    "phone": "354-8461",
+    "website": "https://rokys.com/",
+    "image": "images/rockys.jpg",
+    "membership_level": 3
+  },
+  {
+    "name": "Aventura Gym",
+    "address": "Jr.Michael Fort 298, SMP",
+    "phone": "220-2604",
+    "website": "https://www.facebook.com/SafariGYm/",
+    "image": "images/gym.jpg",
+    "membership_level": 1
+  },
+  {
+    "name": "Inkafarma",
+    "address": "Av.Habish 1236, SMP",
+    "phone": "806-4251",
+    "website": "https://inkafarma.pe/",
+    "image": "images/inkafarma.jpg",
+    "membership_level": 2
+  }
+]
+}
