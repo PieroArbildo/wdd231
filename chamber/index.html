@@ -47,6 +47,7 @@
     <link href="styles/index-large.css" rel="stylesheet" />
     <script src="scripts/menu.js" defer></script>
     <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
     <script src="scripts/footer.js" defer></script>
     <link rel="icon" href="favicon.ico" />
 
@@ -97,7 +98,6 @@
       </nav>
     </header>
     <main class="main">
-      <h2>Home</h2>
 
       <div class="hero">
         <picture>
@@ -121,8 +121,10 @@
         </picture>
         <a href="#join.html" class="cta-button">Know More</a>
       </div>
-
-      <section class="events"></section>
+      <h2>Home</h2>
+      <section class="events">
+        <h2>Events</h2>
+      </section>
       <section class="weather">
         <div id="current-weather">
             <h2>Current Weather</h2>
@@ -130,11 +132,7 @@
             <img id="graphic" src="" alt="">
             <p id="description"></p>
             <p id="temperature"></p>
-            <p id="high"></p>
-            <p id="low"></p>
             <p id="humidity"></p>
-            <p id="sunrise"></p>
-            <p id="sunset"></p>
         </div>
         <div id="weather-forescast">
             <h2>Weather Forescast</h2>
@@ -143,7 +141,7 @@
             <p id="temperatureForecast3"></p>
         </div>
       </section>
-      <section class="advertisements"></section>
+      <section class="spotlights"></section>
     </main>
     <footer>
       <div id="contact">

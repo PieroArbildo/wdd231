@@ -1,10 +1,12 @@
 h2 {
-  text-align: center;
-  padding-top: 20px;
+  /*text-align: center;*/
+  padding-left: 70px;
 }
 
 .hero {
   position: relative;
+
+  margin-top: 35px;
 }
 
 #hero-img {
@@ -42,8 +44,7 @@ picture {
   margin-bottom: 20px;
 }
 
-#current-weather
-{
+#current-weather {
   border-top: 1px solid rgb(73, 73, 73);
   background-color: #f5f5dc;
   text-align: center;
@@ -55,10 +56,75 @@ picture {
   border-bottom: 1px solid rgb(73, 73, 73);
 }
 
-#weather-forescast
+#weather-forescast {
+  border-top: 1px solid rgb(73, 73, 73);
+ /* border-bottom: 1px solid rgb(73, 73, 73);*/
+  background-color: #f5f5dc;
+  text-align: center;
+}
+
+.events h2 {
+  border-top: 1px solid rgb(73, 73, 73);
+  border-bottom: 1px solid rgb(73, 73, 73);
+  background-color: #f5f5dc;
+  text-align: center;
+  padding-bottom: 12px;
+  padding-top: 15px;
+}
+.events {
+  height: 180px;
+}
+
+#current-weather {
+  padding-top: 15px;
+}
+
+#weather-forescast {
+  padding-top: 15px;
+}
+
+.spotlights h3 {
+  text-align: center;
+  border-bottom: 1px solid rgb(211, 208, 208);
+  border-top: 1px solid rgb(211, 208, 208);
+  padding-top:5px;
+  padding-bottom:5px;
+}
+.spotlights h3:first-of-type {
+  border-top: none; 
+  margin-top: 0px;
+}
+
+.spotlights figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.spotlights figure img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+/*
+.spotlights figure div
 {
-    border-top: 1px solid rgb(73, 73, 73);
-    border-bottom: 1px solid rgb(73, 73, 73);
-    background-color: #f5f5dc;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+}*/
+
+.spotlights figure div figcaption {
+  display: flex;
+}
+
+.spotlights figure div figcaption p {
+  display: flex;
+  margin-top: 0px;
+  margin-left: 10px;
+}
+
+.spotlights
+{
+  border: 1px solid rgb(211, 208, 208);
 }

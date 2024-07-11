@@ -6,12 +6,7 @@ const myTempetureForecast = document.querySelector("#temperatureForecast");
 
 const myTempetureForecast2 = document.querySelector("#temperatureForecast2");
 const myTempetureForecast3 = document.querySelector("#temperatureForecast3");
-
-const high = document.querySelector("#high");
-const low = document.querySelector("#low");
 const humidity = document.querySelector("#humidity");
-const sunrise = document.querySelector("#sunrise");
-const sunset = document.querySelector("#sunset");
 
 const myKey = "00519c4bdbb30c883815029f736b771a";
 const myLat = "-12.045467672787273";
@@ -24,7 +19,7 @@ async function apiFetch(url) {
     const response = await fetch(url);
     if (response.ok) {
       const data = await response.json();
-      console.log(data); // testing only
+      //console.log(data); // testing only
       displayResults(data); // uncomment when ready
     } else {
       throw Error(await response.text());
@@ -47,7 +42,6 @@ function kelvinToCelsius(kelvin) {
 }
 
 function displayResults(data) {
-  console.log("holaa");
   myTown.innerHTML = data.name;
   myDescription.innerHTML = capitalizeWords(data.weather[0].description);
   myTempeture.innerHTML = `${Math.round(
@@ -94,7 +88,7 @@ function displayResultsForecast2(data) {
   ];
   const dayOfWeekIndex = dateObject.getDay();
   const dayOfWeek = daysOfWeek[dayOfWeekIndex];
-  console.log(dayOfWeek);
+  //console.log(dayOfWeek);
   myTempetureForecast2.innerHTML = `${dayOfWeek}: ${Math.round(
     kelvinToCelsius(data.list[6].main.temp_max)
   )}&deg;C`;
@@ -132,7 +126,7 @@ function displayResultsForecast3(data) {
   ];
   const dayOfWeekIndex = dateObject.getDay();
   const dayOfWeek = daysOfWeek[dayOfWeekIndex];
-  console.log(dayOfWeek);
+  //console.log(dayOfWeek);
   myTempetureForecast3.innerHTML = `${dayOfWeek}: ${Math.round(
     kelvinToCelsius(data.list[21].main.temp_max)
   )}&deg;C`;
