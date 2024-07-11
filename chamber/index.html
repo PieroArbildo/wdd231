@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lima Chamber of Commerce</title>
     <meta
@@ -41,15 +41,17 @@
     />
 
     <link href="styles/normalize.css" rel="stylesheet" />
-    <link href="styles/directory-movile.css" rel="stylesheet" />
-    <link href="styles/directory-larger.css" rel="stylesheet" />
+    <link href="styles/header-nav-footer.css" rel="stylesheet" />
+    <link href="styles/header-nav-footer-large.css" rel="stylesheet" />
+    <link href="styles/index-movile.css" rel="stylesheet" />
+    <link href="styles/index-large.css" rel="stylesheet" />
     <script src="scripts/menu.js" defer></script>
-    <script src="scripts/members.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
     <script src="scripts/footer.js" defer></script>
     <link rel="icon" href="favicon.ico" />
 
     <meta property="og:title" content="Piero Arbildo wdd231" />
-    <meta property="og:type" content="website">
+    <meta property="og:type" content="website" />
     <meta
       property="og:image"
       content="https://github.com/PieroArbildo/wdd231/blob/main/chamber/meta-image.JPG?raw=true"
@@ -80,7 +82,7 @@
       <nav id="navigation">
         <ul class="navigation">
           <li>
-            <a href="index.html">Home</a>
+            <a href="directory.html">Home</a>
           </li>
           <li>
             <a href="directory.html">Directory</a>
@@ -95,12 +97,53 @@
       </nav>
     </header>
     <main class="main">
-      <h2>Business Directory</h2>
-      <div class="menu">
-        <button id="grid">⏹️Grid</button>
-        <button id="list">📄List</button>
+      <h2>Home</h2>
+
+      <div class="hero">
+        <picture>
+          <source
+            srcset="images/place-peru-large.webp"
+            media="(min-width:950px)"
+          />
+
+          <source
+            srcset="images/place-peru-medium.webp"
+            media="(min-width:47em)"
+          />
+
+          <img
+            id="hero-img"
+            src="images/place-peru-small.webp"
+            alt="coast of peru, picture"
+            width="1000"
+            loading="lazy"
+          />
+        </picture>
+        <a href="#join.html" class="cta-button">Know More</a>
       </div>
-      <div id="cards"></div>
+
+      <section class="events"></section>
+      <section class="weather">
+        <div id="current-weather">
+            <h2>Current Weather</h2>
+            <h3 id="town"></h3>
+            <img id="graphic" src="" alt="">
+            <p id="description"></p>
+            <p id="temperature"></p>
+            <p id="high"></p>
+            <p id="low"></p>
+            <p id="humidity"></p>
+            <p id="sunrise"></p>
+            <p id="sunset"></p>
+        </div>
+        <div id="weather-forescast">
+            <h2>Weather Forescast</h2>
+            <p id="temperatureForecast"></p>
+            <p id="temperatureForecast2"></p>
+            <p id="temperatureForecast3"></p>
+        </div>
+      </section>
+      <section class="advertisements"></section>
     </main>
     <footer>
       <div id="contact">
