@@ -4,16 +4,17 @@ let content = "";
 
 const displayspotlights = (members) => {
   content = "";
-  let countOver2 = 0; 
-  let countEqual2 = 0; 
+  let countOver2 = 0;
+  let countEqual2 = 0;
 
   members.forEach((member) => {
     const { name, image, address, phone, website, membership_level } = member;
 
     if (membership_level > 2 && countOver2 < 2) {
       content += `
+    <div id="content">
       <h3 id="member-name">${name}</h3>
-        <figure>
+        <figure id ="spotlights-figure">
           <img src="${image}" width="250" height="250" alt="${name} Photo" loading="lazy"/>
           <div>
             <figcaption id="address">Address: <p>${address}</p></figcaption>
@@ -21,12 +22,15 @@ const displayspotlights = (members) => {
             <a target="_blank" id="website" href="${website}">Visit Website</a>
           </div>
         </figure>
+      </div>
+    
       `;
       countOver2++;
     }
 
     if (membership_level === 2 && countEqual2 === 0) {
-        content += `
+      content += `
+      <div id="content">
         <h3 id="member-name">${name}</h3>
           <figure>
             <img src="${image}" width="250" height="250" alt="${name} Photo" loading="lazy"/>
@@ -36,8 +40,9 @@ const displayspotlights = (members) => {
               <a target="_blank" id="website" href="${website}">Visit Website</a>
             </div>
           </figure>
+      </div>
         `;
-      countEqual2++; 
+      countEqual2++;
     }
 
     if (countOver2 === 2 && countEqual2 > 0) {
