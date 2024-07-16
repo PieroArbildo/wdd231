@@ -43,11 +43,10 @@
     <link href="styles/normalize.css" rel="stylesheet" />
     <link href="styles/header-nav-footer.css" rel="stylesheet" />
     <link href="styles/header-nav-footer-large.css" rel="stylesheet" />
-    <link href="styles/index-movile.css" rel="stylesheet" />
-    <link href="styles/index-large.css" rel="stylesheet" />
+    <link href="styles/join-movile.css" rel="stylesheet" />
+    <link href="styles/join-larger.css" rel="stylesheet" />
     <script src="scripts/menu.js" defer></script>
-    <script src="scripts/weather.js" defer></script>
-    <script src="scripts/spotlights.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
     <script src="scripts/footer.js" defer></script>
     <link rel="icon" href="favicon.ico" />
 
@@ -97,59 +96,100 @@
         </ul>
       </nav>
     </header>
+    
     <main class="main">
-      <div class="hero">
-        <picture>
-          <source
-            srcset="images/place-peru-large.webp"
-            media="(min-width:950px)"
-          />
+      
+        <form method="GET" action="thankyou.html" class="designOne">
+          <h2>Join</h2>
+            <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+              <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+              <label for="org-title">Organizational Title:
+              <input 
+                type="text" 
+                id="org-title" 
+                name="organization-title" 
+                title="Only accept alpha characters, hyphens, and spaces with a minimum of seven characters" 
+                autocomplete="organization-title" 
+                pattern="^[A-Za-z\s\-]{7,}$" 
+                required></label>
+              
+              <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
+              <label>Cell Phone <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
+              <label>Business/organization's name: <input type="text" name="organ-name" required autocomplete="organization-name" title="Your organization name"></label>
+                     
+              <label>Membership Level
+                <select name="membership" required>
+                  <option value="np">NP Membership</option>
+                  <option value="bronze">Bronze Membership</option>
+                  <option value="silver">Silver Membership</option>
+                  <option value="gold">Gold Membership</option>
+                </select>
+              </label>
+              
 
-          <source
-            srcset="images/place-peru-medium.webp"
-            media="(min-width:47em)"
-          />
+              <label id="description-l" for="description">Description:</label>
+              <textarea id="description" name="description" title="Description"></textarea>
+      
+              <input type="submit" value="Register Free">
+          </form>
+          <div id="cards">
+            <p class="animated-text" id="information-level">More information about Membership</p>
+            <div class="card">
+              <h3>NP Membership</h3>
+              <button class="modal-btn" data-modal="modal1">Know More</button>
+            </div>
+            <div class="card">
+              <h3>Bronze Membership 🥉</h3>
+              <button class="modal-btn" data-modal="modal2">Know More</button>
+            </div>
+            <div class="card">
+              <h3>Silver Membership 🥈</h3>
+              <button class="modal-btn" data-modal="modal3">Know More</button>
+            </div>
+            <div class="card">
+              <h3>Gold Membership 🥇</h3>
+              <button class="modal-btn" data-modal="modal4">Know More</button>
+            </div>
+          </div>
 
-          <img
-            id="hero-img"
-            src="images/place-peru-small.webp"
-            alt="coast of peru, picture"
-            width="1000"
-            loading="lazy"
-          />
-        </picture>
-        <a href="join.html" class="cta-button">Know More</a>
-      </div>
-      <h2>Home</h2>
-      <div id="sections">
-        <section class="events">
-          <h2>Events</h2>
-          <h3>50% Discount on Technology Products</h3>
-          <p><span>Date:</span> July 20 - July 27, 2024</p>
-          <p><span>Time:</span> All day</p>
-          <p><span>Location:</span> Jr.Vista Alegre 173, SMP</p>
-          <p><span>Description:</span> Don't miss out on our exclusive event offering a 50% discount on all technology products! Visit our store from July 20th to July 27th to take advantage of these amazing deals.</p>
-          <a href="https://www.facebook.com/profile.php?id=100063533499695" target="_blank">Learn More</a>
-        </section>
-        <section class="weather">
-          <div id="current-weather">
-            <h2>Current Weather</h2>
-            <h3 id="town"></h3>
-            <img id="graphic" src="" alt="" />
-            <p id="description"></p>
-            <p id="temperature"></p>
-            <p id="humidity"></p>
-          </div>
-          <div id="weather-forescast">
-            <h2>Weather Forescast</h2>
-            <p id="temperatureForecast"></p>
-            <p id="temperatureForecast2"></p>
-            <p id="temperatureForecast3"></p>
-          </div>
-        </section>
-      </div>
-      <section class="spotlights"></section>
+
+
     </main>
+
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>NP Membership</h2>
+        <p>
+          No cost, special events</p>
+      </div>
+    </div>
+  
+    <div id="modal2" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Bronze Membership</h2>
+        <p>Discounts on events, basic advertising.</p>
+      </div>
+    </div>
+  
+    <div id="modal3" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Silver Membership</h2>
+        <p>Additional discounts, special events, advanced advertising.</p>
+      </div>
+    </div>
+  
+    <div id="modal4" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Gold Membership</h2>
+        <p>Benefits of all types of memberships plus exceptional promotions.</p>
+      </div>
+    </div>
+
+
     <footer>
       <div id="contact">
         <h3>Lima Chamber of Commerce</h3>

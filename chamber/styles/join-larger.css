@@ -1,0 +1,9 @@
+@media only screen and (min-width: 47em) {
+  main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+}
