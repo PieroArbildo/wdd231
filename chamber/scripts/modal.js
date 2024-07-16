@@ -1,3 +1,8 @@
+let submissionTimeField = document.getElementById('submissionTime');
+let now = new Date();
+let isoDateTime = now.toISOString();
+submissionTimeField.value = isoDateTime;
+
 document.addEventListener('DOMContentLoaded', function() {
   const modalBtns = document.querySelectorAll('.modal-btn');
   const modals = document.querySelectorAll('.modal');

@@ -35,8 +35,3 @@ showInfo.innerHTML = `
 <p><strong>${date}</strong></p>
 </div>
 `
-
-
-
-
-

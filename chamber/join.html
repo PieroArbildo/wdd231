@@ -54,7 +54,7 @@
     <meta property="og:type" content="website" />
     <meta
       property="og:image"
-      content="https://github.com/PieroArbildo/wdd231/blob/main/chamber/home-meta.JPG?raw=true"
+      content="https://github.com/PieroArbildo/wdd231/blob/main/chamber/join-meta.JPG?raw=true"
     />
     <meta
       property="og:url"
@@ -96,75 +96,131 @@
         </ul>
       </nav>
     </header>
-    
+
     <main class="main">
-      
-        <form method="GET" action="thankyou.html" class="designOne">
-          <h2>Join</h2>
-            <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
-              <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
-              <label for="org-title">Organizational Title:
-              <input 
-                type="text" 
-                id="org-title" 
-                name="organization-title" 
-                title="Only accept alpha characters, hyphens, and spaces with a minimum of seven characters" 
-                autocomplete="organization-title" 
-                pattern="^[A-Za-z\s\-]{7,}$" 
-                required></label>
-              
-              <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
-              <label>Cell Phone <input type="tel" name="phone"  autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
-              <label>Business/organization's name: <input type="text" name="organ-name" required autocomplete="organization-name" title="Your organization name"></label>
-                     
-              <label>Membership Level
-                <select name="membership" required>
-                  <option value="np">NP Membership</option>
-                  <option value="bronze">Bronze Membership</option>
-                  <option value="silver">Silver Membership</option>
-                  <option value="gold">Gold Membership</option>
-                </select>
-              </label>
-              
+      <form
+        method="GET"
+        action="thankyou.html"
+        class="designOne"
+        id="registrationForm"
+      >
+        <h2>Join</h2>
+        <label
+          >First Name
+          <input
+            type="text"
+            name="first"
+            required
+            autocomplete="given-name"
+            title="Your First Name"
+        /></label>
+        <label
+          >Last Name
+          <input
+            type="text"
+            name="last"
+            required
+            autocomplete="family-name"
+            title="Your Last Name"
+        /></label>
+        <label for="org-title"
+          >Organizational Title:
+          <input
+            type="text"
+            id="org-title"
+            name="organization-title"
+            title="Only accept alpha characters, hyphens, and spaces with a minimum of seven characters"
+            autocomplete="organization-title"
+            pattern="^[A-Za-z\s\-]{7,}$"
+            required
+        /></label>
 
-              <label id="description-l" for="description">Description:</label>
-              <textarea id="description" name="description" title="Description"></textarea>
-      
-              <input type="submit" value="Register Free">
-          </form>
-          <div id="cards">
-            <p class="animated-text" id="information-level">More information about Membership</p>
-            <div class="card">
-              <h3>NP Membership</h3>
-              <button class="modal-btn" data-modal="modal1">Know More</button>
-            </div>
-            <div class="card">
-              <h3>Bronze Membership 🥉</h3>
-              <button class="modal-btn" data-modal="modal2">Know More</button>
-            </div>
-            <div class="card">
-              <h3>Silver Membership 🥈</h3>
-              <button class="modal-btn" data-modal="modal3">Know More</button>
-            </div>
-            <div class="card">
-              <h3>Gold Membership 🥇</h3>
-              <button class="modal-btn" data-modal="modal4">Know More</button>
-            </div>
-          </div>
+        <label
+          >Email
+          <input
+            type="email"
+            name="email"
+            required
+            placeholder="john89@gmail.com"
+            title="Your Email"
+            autocomplete="email"
+        /></label>
+        <label
+          >Cell Phone
+          <input
+            type="tel"
+            name="phone"
+            autocomplete="tel"
+            title="A Phone Number with dashes"
+            placeholder="987-555-1234"
+        /></label>
 
+        <label
+          >Business/organization's name:
+          <input
+            type="text"
+            name="organ-name"
+            required
+            autocomplete="organization"
+            title="Your organization name"
+          />
+        </label>
 
+        <label
+          >Membership Level
+          <select name="membership" required>
+            <option value="" disabled selected>
+              Select your membership level
+            </option>
+            <option value="np">NP Membership</option>
+            <option value="bronze">Bronze Membership</option>
+            <option value="silver">Silver Membership</option>
+            <option value="gold">Gold Membership</option>
+          </select>
+        </label>
 
+        <label id="description-l" for="description">Description:</label>
+        <textarea
+          id="description"
+          name="description"
+          title="Description"
+        ></textarea>
+        <input type="hidden" name="submissionTime" id="submissionTime" />
+
+        <input type="submit" value="Register Free" />
+      </form>
+
+      <div id="cards">
+        <p class="animated-text" id="information-level">
+          More information about Membership
+        </p>
+        <div class="card">
+          <h3>NP Membership</h3>
+          <button class="modal-btn" data-modal="modal1">Know More</button>
+        </div>
+        <div class="card">
+          <h3>Bronze Membership 🥉</h3>
+          <button class="modal-btn" data-modal="modal2">Know More</button>
+        </div>
+        <div class="card">
+          <h3>Silver Membership 🥈</h3>
+          <button class="modal-btn" data-modal="modal3">Know More</button>
+        </div>
+        <div class="card">
+          <h3>Gold Membership 🥇</h3>
+          <button class="modal-btn" data-modal="modal4">Know More</button>
+        </div>
+      </div>
     </main>
 
     <div id="modal1" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
         <h2>NP Membership</h2>
-        <p>
-          No cost, special events</p>
+        <p>No cost, special events</p>
       </div>
     </div>
-  
+
     <div id="modal2" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
@@ -172,7 +228,7 @@
         <p>Discounts on events, basic advertising.</p>
       </div>
     </div>
-  
+
     <div id="modal3" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
@@ -180,7 +236,7 @@
         <p>Additional discounts, special events, advanced advertising.</p>
       </div>
     </div>
-  
+
     <div id="modal4" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
@@ -188,7 +244,6 @@
         <p>Benefits of all types of memberships plus exceptional promotions.</p>
       </div>
     </div>
-
 
     <footer>
       <div id="contact">
