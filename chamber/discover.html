@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lima Chamber of Commerce</title>
+    <meta
+      name="Chamber Directory Page"
+      content="Course Home Page-BYUI-WDD231"
+    />
+    <meta name="author" content="Piero Arbildo" />
+    <meta
+      name="keywords"
+      content="W01 Assignment: Course Home Page,BYUI-WDD231"
+    />
+    <meta name="description" content="BYUI-WDD231, Chamber Directory Page" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
+      as="style"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&family=Hubballi&family=Kotta+One&family=Snippet&display=swap"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&family=Hubballi&family=Kotta+One&family=Snippet&display=swap"
+    />
+
+    <link href="styles/normalize.css" rel="stylesheet" />
+    <link href="styles/header-nav-footer.css" rel="stylesheet" />
+    <link href="styles/header-nav-footer-large.css" rel="stylesheet" />
+    <link href="styles/join-movile.css" rel="stylesheet" />
+    <link href="styles/join-larger.css" rel="stylesheet" />
+    <script src="scripts/menu.js" defer></script>
+    <!--<script src="scripts/modal.js" defer></script>-->
+    <script src="scripts/discover.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <link rel="icon" href="favicon.ico" />
+
+    <meta property="og:title" content="Piero Arbildo wdd231" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:image"
+      content="https://github.com/PieroArbildo/wdd231/blob/main/chamber/join-meta.JPG?raw=true"
+    />
+    <meta
+      property="og:url"
+      content="https://pieroarbildo.github.io/wdd231/chamber/join.html"
+    />
+  </head>
+  <body>
+    <header>
+      <div id="menu-left">
+        <div id="menu-photo">
+          <img
+            src="//upload.wikimedia.org/wikipedia/commons/thumb/8/80/Coat_of_arms_of_Lima.svg/320px-Coat_of_arms_of_Lima.svg.png"
+            width="70"
+            height="70"
+            alt="Shield of Lima"
+          />
+        </div>
+        <div id="menu-tittle">
+          <h1 id="h1">Lima</h1>
+          <p>Chamber of Commerce</p>
+        </div>
+        <button id="menu-button"></button>
+      </div>
+
+      <nav id="navigation">
+        <ul class="navigation">
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="directory.html">Directory</a>
+          </li>
+          <li>
+            <a href="join.html">Join</a>
+          </li>
+          <li>
+            <a href="discover.html">Discover</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main id="discover-main">
+      <h2 id="discover-h2">Discover</h2>
+      <div id="content-main">
+        <section id="left">
+          <div id="conent-left">
+            <div id="dynamic-greeting">
+              <h3></h3>
+            </div>
+            <div id="data">
+              <h3>Lima</h3>
+              <ul>
+                <li>
+                  The population of Lima is approximately 9.7 million people,
+                  making it the most populous city in Peru and one of the
+                  largest in South America.
+                </li>
+                <li>Lima has a total area of around 2,672 km².</li>
+                <li>
+                  The population density in Lima is about 3,629 inhabitants per
+                  km².
+                </li>
+                <li>
+                  The median age of the population in Lima is around 29 years.
+                </li>
+                <li>
+                  Lima has a diverse population, with a mix of different ethnic
+                  groups, including mestizos (descendants of Europeans and
+                  indigenous people), Europeans, Africans, Asians (mainly
+                  Chinese and Japanese), and indigenous groups.
+                </li>
+                <li>The official and most spoken language is Spanish.</li>
+                <li>
+                  Lima is the economic and financial center of Peru, with a
+                  diversified economy that includes sectors such as
+                  manufacturing, commerce, financial services, technology, and
+                  tourism.
+                </li>
+              </ul>
+              <div id="map">
+                <h3>Lima Map</h3>
+                <img src="images/lima.webp" alt="Lima" loading="lazy" width="450">
+                <!--<iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d249743.68803786347!2d-76.98777915!3d-12.0266383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c5f619ee3ec7%3A0x14206cb9cc452e4a!2sLima!5e0!3m2!1ses!2spe!4v1721286295115!5m2!1ses!2spe"
+                  width="450"
+                  height="450"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Map of Lima, Peru"
+                ></iframe>-->
+              </div>
+            </div>
+            <div id="calendar">
+              <h3>Current Date</h3>
+              <div id="date"></div>
+              <h3>Calendar</h3>
+              <div id="calendar-grid"></div>
+            </div>
+          </div>
+        </section>
+        <section id="right">
+          <h3>Profitable businesses in Lima</h3>
+          <figure>
+            <h4>Fashion and Beauty</h4>
+            <picture>
+                <source media="(max-width: 768px)" srcset="images/moda.webp" />
+                <source media="(min-width: 769px)" srcset="images/moda.webp" />
+              <img
+                src="images/moda.webp"
+                alt="Fashion and Beauty"
+                loading="lazy"
+                width="350"
+                height="250"
+              />
+            </picture>
+            <!--<figcaption>Imagen 1</figcaption>-->
+          </figure>
+          <figure>
+            <h4>Gastronomy and Restaurants</h4>
+            <picture>
+                <source media="(max-width: 768px)" srcset="images/restaurant.webp" />
+                <source media="(min-width: 769px)" srcset="images/restaurant.webp" />
+              <img
+                src="images/restaurant.webp"
+                alt="Gastronomy and Restaurants"
+                loading="lazy"
+                width="350"
+                height="250"
+              />
+            </picture>
+          </figure>
+          <figure>
+            <h4>Grocery stores</h4>
+            <picture>
+                <source media="(max-width: 768px)" srcset="images/market.webp" />
+                <source media="(min-width: 769px)" srcset="images/market.webp" />
+              <img
+                src="images/market.webp"
+                alt="Grocery stores"
+                loading="lazy"
+                width="350"
+                height="250"
+              />
+            </picture>
+          </figure>
+          <figure>
+            <h4>Technology</h4>
+            <picture>
+                <source media="(max-width: 768px)" srcset="images/technology.webp" />
+                <source media="(min-width: 769px)" srcset="images/technology.webp" />
+              <img
+                src="images/technology.webp"
+                alt="Technology"
+                loading="lazy"
+                width="350"
+                height="250"
+              />
+            </picture>
+          </figure>
+          <figure>
+            <h4>Health and Wellness</h4>
+            <picture>
+                <source media="(max-width: 768px)" srcset="images/gym.webp" />
+                <source media="(min-width: 769px)" srcset="images/gym.webp" />
+              <img
+                src="images/gym.webp"
+                alt="Health and Wellness"
+                loading="lazy"
+                width="350"
+                height="250"
+              />
+            </picture>
+          </figure>
+          <figure>
+            <h4>Education</h4>
+            <picture>
+                <source media="(max-width: 768px)" srcset="images/education.webp" />
+                <source media="(min-width: 769px)" srcset="images/education.webp" />
+              <img
+                src="images/education.webp"
+                alt="Education"
+                loading="lazy"
+                width="350"
+                height="250"
+              />
+            </picture>
+          </figure>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div id="contact">
+        <h3>Lima Chamber of Commerce</h3>
+        <p>Av.Juan XXIII 170</p>
+        <p>SMP, Lima</p>
+        <p>info@limachamber.com</p>
+        <p>338-7314</p>
+      </div>
+      <div id="social">
+        <a href="https://www.facebook.com" target="_blank" title="Facebook">
+          <img
+            src="images/Facebook.png"
+            width="70"
+            height="70"
+            alt="facebook icon"
+            loading="lazy"
+        /></a>
+        <a href="https://www.x.com" target="_blank" title="Twitter">
+          <img
+            src="https://github.com/PieroArbildo/wdd231/blob/main/chamber/images/x.PNG?raw=true"
+            width="70"
+            height="70"
+            alt="x icon"
+            loading="lazy"
+        /></a>
+        <a href="https://www.linkedin.com" target="_blank" title="LinkedIn">
+          <img
+            id="LinkedIn"
+            src="images/linkedin.png"
+            width="90"
+            height="90"
+            alt="linkedin icon"
+            loading="lazy"
+        /></a>
+      </div>
+      <div id="info">
+        <p>WDD231 Class Project</p>
+        <p>Piero Arbildo</p>
+        <p id="currentyear">Lima Chamber of Commerce</p>
+        <p id="lastmodification">last modification</p>
+      </div>
+    </footer>
+  </body>
+</html>
