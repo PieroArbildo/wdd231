@@ -1,0 +1,86 @@
+@media only screen and (min-width: 47em) {
+  #menu-button {
+    display: none;
+  }
+
+  header {
+    display: grid;
+    grid-template-columns: 42% 53%;
+    background-color: #002147;
+    height: 140px;
+    margin-left: 0;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+
+  main {
+    margin-top: 36px;
+  }
+
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #navigation ul {
+    padding-right: 30px;
+  }
+
+  #navigation {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+  }
+
+  .navigation li {
+    list-style: none;
+    width: 100%;
+  }
+
+  .navigation li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "Kotta One", serif;
+    color: white;
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    background-color: #002147;
+  }
+
+  .navigation li a:hover {
+    background-color: #323232;
+  }
+
+  main {
+    padding: 20px;
+    padding-bottom: 50px;
+    margin-bottom: 30px;
+  }
+  #info {
+    margin-bottom: 0px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  #social {
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+  }
+
+  #info {
+    margin-top: 20px;
+  }
+}

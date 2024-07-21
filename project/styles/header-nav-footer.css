@@ -1,0 +1,242 @@
+/*header and nav*/
+
+:root {
+  --color-text: #333333;
+  --color-text-menu: #333333;
+  --background-menu: #002147;
+  --backgound-body: #F5F5F5;
+  --font-body: "Kotta One", serif;
+  --font-h1: "Caveat", cursive;
+}
+body {
+  min-width: 395px;
+  font-family: "Kotta One", serif;
+}
+
+h1 {
+  font-family: "Caveat", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 60px;
+  color: var(--color-text-menu);
+  /*background-color: rgb(105, 25, 25);*/
+  background-color: #FFCC00;
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+  padding-right: 24px;
+}
+
+#menu-tittle p {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "Kotta One", serif;
+  color: #333333;
+  background-color: #FFCC00;
+  font-size: 18px;
+}
+
+#title {
+  text-decoration: none;
+  color: inherit;
+}
+
+#menu-left {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  margin: 10px;
+  background-color: #FFCC00;
+  justify-content: center;
+}
+
+#menu-tittle {
+  margin-left: 10px;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  justify-content: center;
+}
+
+#menu-photo {
+  margin-left: 15px;
+}
+
+
+#menu-button {
+  font-size: 40px;
+  margin-left: auto;
+  margin-right: 42px;
+
+  color: #ffffff;
+  /*background-color: rgb(105, 25, 25);*/
+  background-color: #002147;
+
+  border: none;
+}
+
+#menu-button:hover {
+  cursor: pointer;
+}
+
+#menu-button::before {
+  content: "☰";
+}
+#menu-button.open::before {
+  content: "X";
+}
+
+.navigation {
+ /* background-color: rgb(105, 25, 25);*/
+  margin-top: -10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #002147;
+}
+
+.navigation li {
+  list-style: none;
+  color: #ffffff;
+
+  align-content: center;
+
+  width: 90%;
+  text-align: end;
+  height: 50px;
+  margin-right: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.navigation li a {
+  display: block;
+  text-decoration: none;
+  font-size: 20px;
+  font-family: "Kotta One", serif;
+  padding-right: 30px;
+  color: #ffffff;
+  height: 100%;
+  align-content: center;
+}
+
+.navigation li a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navigation li:hover {
+  background-color: #323232;
+}
+
+#menu-button:active {
+  border: 2px solid white;
+}
+
+.navigation li a:active {
+  color: white;
+  font-size: 21px;
+}
+
+#navigation {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.5s ease-out;
+}
+
+nav ul {
+  overflow: hidden;
+}
+
+#navigation.open {
+  grid-template-rows: 1fr;
+}
+
+header {
+  margin-bottom: -40px;
+  /*background-color: rgb(105, 25, 25);*/
+  background-color: #002147;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/*footer*/
+footer {
+  grid-column: 1/3;
+  background-color: #002147;
+  color: white;
+  padding: 20px;
+  /*height: 125px;*/
+  text-align: center;
+  align-content: center;
+  margin-top: -29px;
+  padding-top: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+
+#currentyear {
+  display: block;
+}
+
+#lastmodification {
+  font-size: 18px;
+}
+
+footer div {
+  background-color: #002147;
+}
+
+footer p {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+#contact,
+#info {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding-left: 30px;
+}
+footer div {
+  padding: 10px;
+  margin-left: -20px;
+  margin-right: -20px;
+}
+
+#social {
+  align-items: center;
+}
+
+#social a {
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+
+#info {
+  margin-bottom: 10px;
+}
+
+#social a img {
+  border-radius: 50%;
+}
+
+#LinkedIn {
+  margin-bottom: -12px;
+}
+main {
+  padding-bottom: 40px;
+}
+
+main{
+    background-color: #F5F5F5;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 0;
+  }

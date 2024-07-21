@@ -1,0 +1,133 @@
+h2 {
+  padding-left: 70px;
+}
+
+.hero {
+  position: relative;
+
+  margin-top: 35px;
+}
+
+#hero-img {
+  margin: 15px;
+  width: 450px;
+  opacity: 0.9;
+}
+picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.cta-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 60%);
+  padding: 10px 20px;
+  background-color: #024b99;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.cta-button:hover {
+  background-color: #033870;
+  color: white;
+}
+
+.navigation {
+  margin-bottom: 20px;
+}
+
+/*
+
+#current-weather {
+  border-top: 1px solid rgb(73, 73, 73);
+  background-color: #f5f5dc;
+  text-align: center;
+}
+
+#current-weather h2,
+#weather-forescast h2 {
+  margin-top: -14px;
+  border-bottom: 1px solid rgb(73, 73, 73);
+}
+
+#weather-forescast {
+  border-top: 1px solid rgb(73, 73, 73);
+  background-color: #f5f5dc;
+  text-align: center;
+}
+
+.events h2 {
+  border-top: 1px solid rgb(73, 73, 73);
+  border-bottom: 1px solid rgb(73, 73, 73);
+  background-color: #f5f5dc;
+  text-align: center;
+  padding-bottom: 12px;
+  padding-top: 15px;
+}
+.events {
+  height: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+#current-weather {
+  padding-top: 15px;
+}
+
+#weather-forescast {
+  padding-top: 15px;
+}
+
+.spotlights h3 {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.spotlights h3:first-of-type {
+  border-top: none;
+  margin-top: 0px;
+}
+
+.spotlights figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spotlights figure img {
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.spotlights figure div figcaption {
+  display: flex;
+}
+
+.spotlights figure div figcaption p {
+  display: flex;
+  margin-top: 0px;
+  margin-left: 10px;
+}
+
+.spotlights {
+  border: 1px solid rgb(211, 208, 208);
+}
+
+#content {
+  border-bottom: 1px solid rgb(211, 208, 208);
+}
+
+.events span
+{
+  font-weight: bold;
+}
+*/
