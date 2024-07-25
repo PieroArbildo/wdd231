@@ -1,0 +1,16 @@
+{
+  "events": [
+    {
+      "title": "Marinera Festival in Trujillo",
+      "description": "The Marinera Festival is a celebration of the traditional Peruvian dance known as marinera, which is characteristic of the La Libertad region. This event, held in January, features dance competitions, performances by folk groups, and exhibitions of traditional costumes."
+    },
+    {
+      "title": "Inti Raymi, or Festival of the Sun",
+      "description": "Inti Raymi, or Festival of the Sun, is an ancient Inca celebration held in Cusco. The festival celebrates the winter solstice and pays homage to the sun, Inti. It includes historical reenactments, traditional dances, and ceremonies at the Plaza de Armas and the Sacsayhuamán Fortress, taking place in June."
+    },
+    {
+      "title": "Day of Criollo Music in Lima",
+      "description": "This event celebrates criollo music, an indigenous Peruvian genre that combines Spanish, African, and indigenous influences. The festival, held in October, includes concerts by renowned criollo music artists, singing contests, and traditional dances such as the waltz and marinera."
+    }
+  ]
+}

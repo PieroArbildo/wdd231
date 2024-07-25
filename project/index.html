@@ -1,174 +1,139 @@
 <!DOCTYPE html>
 <html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Peru Tourist Places</title>
-    <meta
-      name="Peru Tourist Places"
-      content="Project Home Page-BYUI-WDD231"
-    />
-    <meta name="author" content="Piero Arbildo" />
-    <meta
-      name="keywords"
-      content="Project Assignment: Course Project Page,BYUI-WDD231"
-    />
-    <meta name="description" content="BYUI-WDD231, Peru Tourist Places" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
-      as="style"
-    />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Discover Peru</title>
+  <meta name="Discover Peru" content="Project Home Page-BYUI-WDD231" />
+  <meta name="author" content="Piero Arbildo" />
+  <meta name="keywords" content="Project Assignment: Course Project Page,BYUI-WDD231" />
+  <meta name="description" content="BYUI-WDD231, Discover Peru" />
 
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap"
-    />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" as="style" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      rel="preload"
-      href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&family=Hubballi&family=Kotta+One&family=Snippet&display=swap"
-      as="style"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&family=Hubballi&family=Kotta+One&family=Snippet&display=swap"
-    />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" />
 
-    <link href="styles/normalize.css" rel="stylesheet" />
-    <link href="styles/header-nav-footer.css" rel="stylesheet" />
-    <link href="styles/header-nav-footer-large.css" rel="stylesheet" />
-    <link href="styles/index-movile.css" rel="stylesheet" />
-    <link href="styles/index-large.css" rel="stylesheet" />
-    <script src="scripts/menu.js" defer></script>
-    <!--<script src="scripts/weather.js" defer></script>-->
-    <script src="scripts/footer.js" defer></script>
-    <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&family=Hubballi&family=Kotta+One&family=Snippet&display=swap"
+    as="style" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Edu+QLD+Beginner:wght@400..700&family=Hubballi&family=Kotta+One&family=Snippet&display=swap" />
 
-    <meta property="og:title" content="Piero Arbildo wdd231" />
-    <meta property="og:type" content="website" />
-    <meta
-      property="og:image"
-      content="https://github.com/PieroArbildo/wdd231/blob/main/chamber/home-meta.JPG?raw=true"
-    />
-    <meta
-      property="og:url"
-      content="https://pieroarbildo.github.io/wdd231/chamber/home.html"
-    />
-  </head>
-  <body>
-    <header>
-      <div id="menu-left">
-        <div id="menu-photo">
-          <img
-            src="images/peru.png"
-            width="70"
-            height="70"
-            alt="Peru Flag"
-          />
-        </div>
-        <div id="menu-tittle">
-          <h1 id="h1">Perú</h1>
-          <p>Tourist Places</p>
-        </div>
-        <button id="menu-button"></button>
+  <link href="styles/normalize.css" rel="stylesheet" />
+  <link href="styles/header-nav-footer.css" rel="stylesheet" />
+  <link href="styles/header-nav-footer-large.css" rel="stylesheet" />
+  <link href="styles/index-movile.css" rel="stylesheet" />
+  <link href="styles/index-large.css" rel="stylesheet" />
+
+  <script src="scripts/menu.js" defer></script>
+  <script src="scripts/events.js" defer></script>
+  <script src="scripts/footer.js" defer></script>
+  <link rel="icon" href="favicon.ico" />
+
+  <meta property="og:title" content="Piero Arbildo wdd231" />
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://github.com/PieroArbildo/wdd231/blob/main/project/images/home-meta.JPG?raw=true" />
+  <meta property="og:url" content="https://pieroarbildo.github.io/wdd231/chamber/home.html" />
+</head>
+
+<body>
+  <header>
+    <div id="menu-left">
+      <div id="menu-photo">
+        <img src="images/peru.png" width="70" height="70" alt="Peru Flag" />
       </div>
-
-      <nav id="navigation">
-        <ul class="navigation">
-          <li>
-            <a href="index.html">Home</a>
-          </li>
-          <li>
-            <a href="discover.html">Discover</a>
-          </li>
-          <li>
-            <a href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main class="main">
-      <div class="hero">
-        <picture>
-          <source
-            srcset="images/place-peru-large.webp"
-            media="(min-width:950px)"
-          />
-
-          <source
-            srcset="images/place-peru-medium.webp"
-            media="(min-width:47em)"
-          />
-
-          <img
-            id="hero-img"
-            src="images/place-peru-small.webp"
-            alt="coast of peru, picture"
-            width="1000"
-            loading="lazy"
-          />
-        </picture>
-        <a href="discover.html" class="cta-button">Know More</a>
+      <div id="menu-tittle">
+        <h1 id="h1">Discover Peru</h1>
+        <p>Tourist Places</p>
       </div>
-      <h2>Home</h2>
-      <div id="description">
-        <section>
-            <h3>Welcome to Our Website</h3>
-            <p>Peru Tourist Places is your gateway to a country full of history, culture, and natural wonders. On this page, we will explore the most emblematic tourist destinations of Peru, from the majestic citadel of Machu Picchu to the vibrant capital, Lima.</p>         
+      <button id="menu-button"></button>
+    </div>
+
+    <nav id="navigation">
+      <ul class="navigation">
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="discover.html">Discover</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main">
+    <div class="hero">
+      <picture>
+        <source srcset="images/place-peru-large.webp" media="(min-width:950px)" />
+        <source srcset="images/place-peru-medium.webp" media="(min-width:47em)" />
+        <img id="hero-img" src="images/place-peru-small.webp" alt="coast of peru, picture" width="1000"
+          loading="lazy" />
+      </picture>
+      <a href="discover.html" class="cta-button">Know More</a>
+    </div>
+    <h2 id="home">Home</h2>
+    <div id="description">
+      <section>
+        <h3>Welcome to Our Website</h3>
+        <p>Discover Peru is your gateway to a country full of history, culture, and natural wonders. On this page, we
+          will explore the most emblematic tourist destinations of Peru, from the majestic citadel of Machu Picchu to
+          the vibrant capital, Lima.</p>
+      </section>
+      <div id="content">
+        <section id="section1">
+          <p id="p-events">Events</p>
+          <div id="events"></div>
         </section>
-        <p>datos demograficos/ eventos</p>
-        
-       
-    </main>
-    <footer>
-      <div id="contact">
-        <h3>Peru Tourist Places</h3>
-        <p>Av.constructor</p>
-        <p>Suco, Lima</p>
-        <p>info@perutourist.com</p>
-        <p>421-7314</p>
+        <section id="data">
+          <p id="p-data">Data</p>
+          <div>
+            <h3>Demographic data about Peru</h3>
+            <ul>
+              <li><strong>Capital:</strong> Lima</li>
+              <li><strong>Official Languages:</strong> Spanish, Quechua, Aymara</li>
+              <li><strong>Currency:</strong> Peruvian Sol (PEN)</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Population</h3>
+            <ul>
+              <li><strong>Total Population:</strong> Approximately 34 million people</li>
+              <li><strong>Population Density:</strong> Around 26 people per km²</li>
+              <li><strong>Annual Population Growth:</strong> Approximately 1.2%</li>
+            </ul>
+          </div>
+        </section>
       </div>
-      <div id="social">
-        <a href="https://www.facebook.com" target="_blank" title="Facebook">
-          <img
-            src="images/Facebook.png"
-            width="70"
-            height="70"
-            alt="facebook icon"
-            loading="lazy"
-        /></a>
-        <!--
-        <a href="https://www.x.com" target="_blank" title="Twitter">
-          <img
-            src="https://github.com/PieroArbildo/wdd231/blob/main/chamber/images/x.PNG?raw=true"
-            width="70"
-            height="70"
-            alt="x icon"
-            loading="lazy"
-        /></a>
-        -->
-        <a href="https://www.linkedin.com" target="_blank" title="LinkedIn">
-          <img
-            id="LinkedIn"
-            src="images/linkedin.png"
-            width="90"
-            height="90"
-            alt="linkedin icon"
-            loading="lazy"
-        /></a>
-      </div>
-      <div id="info">
-        <p>WDD231 Class Project</p>
-        <p>Piero Arbildo</p>
-        <p id="currentyear">Peru Tourist Places</p>
-        <p id="lastmodification">last modification</p>
-      </div>
-    </footer>
-  </body>
+    </div>
+  </main>
+  <footer>
+    <div id="contact">
+      <h3>Discover Peru</h3>
+      <p>Av.constructor</p>
+      <p>Suco, Lima</p>
+      <p>info@discoverperu.com</p>
+      <p>421-7314</p>
+    </div>
+    <div id="social">
+      <a href="https://www.facebook.com" target="_blank" title="Facebook">
+        <img src="images/Facebook.png" width="70" height="70" alt="facebook icon" loading="lazy" /></a>
+      <a href="https://www.linkedin.com" target="_blank" title="LinkedIn">
+        <img id="LinkedIn" src="images/linkedin.png" width="90" height="90" alt="linkedin icon" loading="lazy" /></a>
+    </div>
+    <div id="info">
+      <p>WDD231 Class Project</p>
+      <p>Piero Arbildo</p>
+      <p id="currentyear">Discover Peru</p>
+      <p id="lastmodification">last modification</p>
+    </div>
+  </footer>
+</body>
+
 </html>

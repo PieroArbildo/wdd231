@@ -1,0 +1,16 @@
+@media only screen and (min-width: 47em) {
+
+    #places-info{
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    #places-info div{
+        border: 1px solid  #4078b8;
+        padding: 20px;
+        width: 300px;
+    }
+}

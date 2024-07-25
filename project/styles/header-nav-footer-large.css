@@ -84,3 +84,20 @@
     margin-top: 20px;
   }
 }
+
+
+
+@media (min-width: 751px) and (max-width: 836px) {
+  #menu-photo img {
+    display: none;
+  }
+  header{
+    height: 211px;
+  }
+}
+@media (min-width: 836px) and (max-width: 1039px) {
+#menu-photo img {
+  display: none;
+}
+}
+

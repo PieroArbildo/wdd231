@@ -1,0 +1,86 @@
+form {
+  margin: 1rem 2%;
+}
+
+form label {
+  display: block;
+  font-size: 16px;
+  color: purple;
+  padding-top: 0.2rem;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form input[type="date"],
+form input[type="email"],
+form select {
+  display: block;
+  margin: 0.1rem 0 1rem 0;
+  padding: 0.3rem;
+  border: 1px solid #999;
+  border-radius: 4px;
+  border-left-width: 5px;
+  border-left-color: #555;
+  font-size: 1rem;
+  color: #1b1b1d;
+  width: 250px;
+  background-color: white;
+}
+
+form input:required {
+  border-left-color: #d70000;
+}
+
+form input:focus {
+  border-left-color: black;
+  outline: none;
+}
+
+form input:required:valid {
+  border-left-color: green;
+}
+
+form input[type="submit"] {
+  border: none;
+  text-align: center;
+  border-radius: 4px;
+  padding: 0.75rem 1.5rem;
+  margin: 2rem 0;
+  font-size: 1.2rem;
+  width: 265px;
+  background-color: #0554a8;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+main h2 {
+  text-align: center;
+  padding: 30px;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+#description-l {
+  text-align: left;
+}
+
+textarea {
+  width: 265px;
+  height: 70px;
+  margin-top: 8px;
+  border-radius: 6px;
+}
+
+p{
+    text-align: center;
+}
+
