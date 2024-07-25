@@ -221,6 +221,7 @@ input[type="submit"]:hover {
 #dynamic-greeting {
   padding: 30px;
   background-color: #f0e9e9;
+  margin-right: 14px;
 }
 
 #data ul {
@@ -236,7 +237,6 @@ input[type="submit"]:hover {
 
 /*calendar styles*/
 #calendar {
-  /*background-color: #f4f4f4;*/
   padding: 1em;
   margin-top: 1em;
   text-align: center;
@@ -263,7 +263,6 @@ input[type="submit"]:hover {
 
 #calendar-grid div {
   padding: 0.5em;
-  /*background-color: #f5f5eb;*/
   background-color: #e7e7d7;
   border: 1px solid #cccccc;
   text-align: center;
@@ -271,7 +270,6 @@ input[type="submit"]:hover {
 
 #calendar-grid .header {
   font-weight: bold;
-  /* background-color: #e4e4e4;*/
   background-color: #f5f5eb;
 }
 
@@ -280,14 +278,6 @@ input[type="submit"]:hover {
   font-weight: bold;
 }
 
-/*
-#conent-left
-{
-  display: flex;
-  flex-direction: column;
-
-
-}*/
 
 #map {
   display: flex;
